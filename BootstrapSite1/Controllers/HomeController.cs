@@ -10,8 +10,8 @@ namespace BootstrapSite1.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Title="MakrinGlobalTutorials";
-return View();
+            ViewBag.Title="Campaign Modules";
+            return View();
         }
     }
 }

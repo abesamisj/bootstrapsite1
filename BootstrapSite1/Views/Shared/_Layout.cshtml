@@ -31,7 +31,7 @@
                 <a class="navbar-brand" href="#">@ViewBag.Title</a>
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
+                @*<ul class="nav navbar-nav navbar-right">
                     <li><a href="#">Dashboard</a></li>
                     <li><a href="#">Settings</a></li>
                     <li><a href="#">Profile</a></li>
@@ -39,17 +39,18 @@
                 </ul>
                 <form class="navbar-form navbar-right">
                     <input type="text" class="form-control" placeholder="Search...">
-                </form>
+                </form>*@
             </div>
         </div>
     </div>
 
     <div class="container-fluid">
         <div class="row">
+            
             <div class="col-sm-3 col-md-2 sidebar">
                 <ul class="nav nav-sidebar">
-                    <li class="active"><a href="#">Overview</a></li>
-                    <li><a href="#">Reports</a></li>
+                    <li class="active">@Html.ActionLink("Overview", "Index", "Home")</li>
+                    <li><a href="#">@Html.ActionLink("Directv Packages", "Index", "Home")</a></li>
                     <li><a href="#">Analytics</a></li>
                     <li><a href="#">Export</a></li>
                 </ul>
